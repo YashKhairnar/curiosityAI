@@ -31,7 +31,6 @@ def create_app():
 
     @app.errorhandler(Exception)
     def internal_error(err):
-        app.logger.exception("Unhandled exception")
         return jsonify(error="internal_error", message="Something went wrong"), 500
 
     return app
