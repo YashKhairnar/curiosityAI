@@ -1,2 +1,48 @@
-.venv
-frontend/my-app/node_modules
+# Python cache and environment
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+.venv/
+env/
+venv/
+ENV/
+
+# Environment & credentials
+.env
+.env.local
+*.key
+*.pem
+*.crt
+*.cert
+
+# IDE and editor configs
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs & artifacts
+*.log
+*.out
+*.err
+
+# Bytecode and compiled files
+*.pyc
+*.pyo
+
+# Build & dist
+build/
+dist/
+*.egg-info/
+
+# Flask / Gunicorn specific
+instance/
+*.sqlite3
+
+# Node modules
+**/node_modules/
