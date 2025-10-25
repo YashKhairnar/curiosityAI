@@ -1,0 +1,708 @@
+[
+  {
+    "embedding": [0.592456042766571, 6.238007545471191, -0.5083772540092468],
+    "link": "http://arxiv.org/abs/2507.01376v1",
+    "title": "e22047f720e74e3d9f6c04d117b6eefa"
+  },
+  {
+    "embedding": [0.415807843208313, 7.113049030303955, 0.9535071849822998],
+    "link": "http://arxiv.org/abs/2502.18359v1",
+    "title": "fd5e421294a44ce9946c06fb2d406ccc"
+  },
+  {
+    "embedding": [-0.06703929603099823, 6.299434185028076, -0.6966695189476013],
+    "link": "http://arxiv.org/abs/2506.01463v1",
+    "title": "1caa81bfc5cc4dc0a23efde8ee178d59"
+  },
+  {
+    "embedding": [-0.361586332321167, 6.7674641609191895, 0.09637989848852158],
+    "link": "http://arxiv.org/abs/2509.20731v1",
+    "title": "b4936521c093488ca0de40ffe4b795ef"
+  },
+  {
+    "embedding": [0.9419464468955994, 5.330429553985596, -0.19314530491828918],
+    "link": "http://arxiv.org/abs/2403.15137v1",
+    "title": "31a6981679a84c3da7d6a9daeb9e04af"
+  },
+  {
+    "embedding": [0.9571903944015503, 6.3633880615234375, -0.3550208508968353],
+    "link": "http://arxiv.org/abs/2505.10468v5",
+    "title": "dc87b736147a4627bb1c8cab2f11cbf2"
+  },
+  {
+    "embedding": [-0.6529271602630615, 7.2083740234375, -0.9395338296890259],
+    "link": "http://arxiv.org/abs/2502.08864v1",
+    "title": "8d30850ab53649f9ac89e01ce9ddf398"
+  },
+  {
+    "embedding": [-0.2636437714099884, 7.147525310516357, -0.6517766118049622],
+    "link": "http://arxiv.org/abs/2406.00477v1",
+    "title": "31a46dc93da14d99983b80d81cbfb35d"
+  },
+  {
+    "embedding": [0.08951883763074875, 6.547485828399658, -0.28343892097473145],
+    "link": "http://arxiv.org/abs/2504.18875v1",
+    "title": "cf96d17e159a47dc8f47b28fa48e5900"
+  },
+  {
+    "embedding": [-1.3482551574707031, 7.379069805145264, -1.1274442672729492],
+    "link": "http://arxiv.org/abs/2412.05450v1",
+    "title": "ddcc7853886743dd90ef24e1ae7846b9"
+  },
+  {
+    "embedding": [
+      -0.016647925600409508, 6.133461952209473, -0.8673569560050964
+    ],
+    "link": "http://arxiv.org/abs/2405.06643v2",
+    "title": "a49357bb69754a2d9edc701215521408"
+  },
+  {
+    "embedding": [0.3982474207878113, 6.9998602867126465, 1.2593737840652466],
+    "link": "http://arxiv.org/abs/2506.04133v4",
+    "title": "190ed56631be4db49e31fb2a51751791"
+  },
+  {
+    "embedding": [-1.0555323362350464, 7.104414939880371, -1.0979660749435425],
+    "link": "http://arxiv.org/abs/2212.13371v1",
+    "title": "d89ed54910d64863af99cc0053716e4e"
+  },
+  {
+    "embedding": [1.3928261995315552, 4.938231468200684, -0.3986821174621582],
+    "link": "http://arxiv.org/abs/2410.15650v1",
+    "title": "5453597f57d24be4900bf3997c5723e0"
+  },
+  {
+    "embedding": [-1.3109101057052612, 7.270288944244385, -1.2434680461883545],
+    "link": "http://arxiv.org/abs/2301.02330v1",
+    "title": "1d95c3e0d9eb4be797a9f7b1472d52fa"
+  },
+  {
+    "embedding": [0.872495174407959, 7.386819839477539, 1.4834973812103271],
+    "link": "http://arxiv.org/abs/2503.04760v1",
+    "title": "b9c54f59c06d45cf8cd6b1df01376f29"
+  },
+  {
+    "embedding": [0.6025102734565735, 6.429995059967041, 1.2733668088912964],
+    "link": "http://arxiv.org/abs/2510.09567v1",
+    "title": "1bc254ef8a674b5eadd5efcc368aa0b4"
+  },
+  {
+    "embedding": [-0.4300258457660675, 6.333719730377197, 0.9276493787765503],
+    "link": "http://arxiv.org/abs/2412.01992v1",
+    "title": "8bd95d70b46f49c991aba93b800cd634"
+  },
+  {
+    "embedding": [0.35016754269599915, 5.261596202850342, 0.508891761302948],
+    "link": "http://arxiv.org/abs/2508.12314v1",
+    "title": "af4a1adcd52a46e7a26dd0dd64884fea"
+  },
+  {
+    "embedding": [0.526199221611023, 5.353275299072266, 0.381915420293808],
+    "link": "http://arxiv.org/abs/2505.23846v1",
+    "title": "477e228df94441c496e4a4fc2a5f92e9"
+  },
+  {
+    "embedding": [1.377017617225647, 6.504623889923096, -0.4012504816055298],
+    "link": "https://patents.google.com/patent/US20250131028A1/en",
+    "title": "8196a99cfa2b460bbb0d6874d68871b1"
+  },
+  {
+    "embedding": [3.3527395725250244, 4.738324165344238, -0.2878994345664978],
+    "link": "https://patents.google.com/patent/US20240412720A1/en",
+    "title": "db7bcd24a561404296f3e2c1c3b44bad"
+  },
+  {
+    "embedding": [3.7416155338287354, 5.526211738586426, -0.8637624382972717],
+    "link": "https://patents.google.com/patent/KR102066371B1/en",
+    "title": "f57d2bab3e7f46ccb2d0133f5c6493b2"
+  },
+  {
+    "embedding": [4.910492420196533, 6.801592826843262, 1.3278756141662598],
+    "link": "https://patents.google.com/patent/KR102731639B1/en",
+    "title": "d6cebbe1a54e4599ab8a0a157b47587c"
+  },
+  {
+    "embedding": [4.258632183074951, 7.171966552734375, -0.5805647969245911],
+    "link": "https://patents.google.com/patent/KR102059753B1/en",
+    "title": "52e345ca55eb447185ac6a1d6c4a9a1b"
+  },
+  {
+    "embedding": [4.737797260284424, 6.501022815704346, 0.8637099266052246],
+    "link": "https://patents.google.com/patent/KR102103931B1/en",
+    "title": "d3c72a96e1c640a8ae402455cd7732e1"
+  },
+  {
+    "embedding": [3.7736406326293945, 6.187013626098633, 0.36221882700920105],
+    "link": "https://patents.google.com/patent/US11663890B2/en",
+    "title": "fb181abe7efc4950af0d6abec2411558"
+  },
+  {
+    "embedding": [3.514285087585449, 4.498771667480469, -0.3521917760372162],
+    "link": "https://patents.google.com/patent/US10715662B2/en",
+    "title": "32061f12c3e2478f8624420717d61340"
+  },
+  {
+    "embedding": [2.562114953994751, 6.673425674438477, 0.6586707234382629],
+    "link": "https://patents.google.com/patent/US12135215B2/en",
+    "title": "d4ed598d58284cd18526fe9b0feff440"
+  },
+  {
+    "embedding": [4.832143783569336, 6.730220794677734, -0.48494383692741394],
+    "link": "https://patents.google.com/patent/US20240127934A1/en",
+    "title": "5704b94f148343aab5c3a80373400fe0"
+  },
+  {
+    "embedding": [3.738723039627075, 5.965786933898926, 0.12018577009439468],
+    "link": "https://patents.google.com/patent/CN112560491B/en",
+    "title": "4284228e86b4402da695b9478f47cd07"
+  },
+  {
+    "embedding": [3.5955729484558105, 5.30333948135376, -1.0075315237045288],
+    "link": "https://patents.google.com/patent/KR102116457B1/en",
+    "title": "14a8f4b565654cd8aa811e099b8b035a"
+  },
+  {
+    "embedding": [2.9894988536834717, 4.618579387664795, -0.38665664196014404],
+    "link": "https://patents.google.com/patent/US11825023B2/en",
+    "title": "fdab7e9f882c46a69e96f4316fed345a"
+  },
+  {
+    "embedding": [4.343677043914795, 6.754668712615967, 1.0722243785858154],
+    "link": "https://patents.google.com/patent/US20220274703A1/en",
+    "title": "2b2ccd3710394422a24fc0bec1b8af34"
+  },
+  {
+    "embedding": [2.317990779876709, 6.658630847930908, 0.02278568409383297],
+    "link": "https://patents.google.com/patent/US20210374569A1/en",
+    "title": "3a8a962c9cf84fe4a636a82d0cf1ea11"
+  },
+  {
+    "embedding": [5.146467208862305, 7.61313009262085, -0.9599750638008118],
+    "link": "https://patents.google.com/patent/US20210186454A1/en",
+    "title": "6db982e1dfe24fbca3ad23eeeea278d7"
+  },
+  {
+    "embedding": [5.414149761199951, 7.844102382659912, -1.1751455068588257],
+    "link": "https://patents.google.com/patent/US11375975B2/en",
+    "title": "26b4629902d84ecea58f8f2fde2fb03b"
+  },
+  {
+    "embedding": [5.494760036468506, 7.909408092498779, -1.238394021987915],
+    "link": "https://patents.google.com/patent/US11534314B2/en",
+    "title": "501bb47b068c48bc9525b3a790cc37c3"
+  },
+  {
+    "embedding": [5.097979545593262, 6.487448692321777, 0.6807857751846313],
+    "link": "https://patents.google.com/patent/US11616816B2/en",
+    "title": "ac18a8b25c614165bf776eb737df9b88"
+  },
+  {
+    "embedding": [3.393653154373169, 4.658404350280762, -0.5627995133399963],
+    "link": "https://patents.google.com/patent/KR102262035B1/en",
+    "title": "01ed631049bc44578499c8de6087d3a4"
+  },
+  {
+    "embedding": [0.7291164398193359, 6.321841239929199, -0.5323850512504578],
+    "link": "http://arxiv.org/abs/2507.01376v1",
+    "title": "8afd7760bec54e04aebed7fee9767d7a"
+  },
+  {
+    "embedding": [0.4507348835468292, 7.161378383636475, 0.8759117722511292],
+    "link": "http://arxiv.org/abs/2502.18359v1",
+    "title": "1970d05509d04b728b7baebb2a11da45"
+  },
+  {
+    "embedding": [
+      -0.19975534081459045, 6.4111762046813965, -0.7922117710113525
+    ],
+    "link": "http://arxiv.org/abs/2506.01463v1",
+    "title": "2545a90ce2ae4d959386408995e2b28a"
+  },
+  {
+    "embedding": [-0.3075641095638275, 6.644928932189941, 0.12893161177635193],
+    "link": "http://arxiv.org/abs/2509.20731v1",
+    "title": "644c8bdc573c4b5c931fe1befa5c9bf5"
+  },
+  {
+    "embedding": [0.7993409037590027, 5.237553119659424, -0.3495049476623535],
+    "link": "http://arxiv.org/abs/2403.15137v1",
+    "title": "35f5dbe053604cecae94da0db5d4c3a4"
+  },
+  {
+    "embedding": [1.0620595216751099, 6.399718761444092, -0.28803855180740356],
+    "link": "http://arxiv.org/abs/2505.10468v5",
+    "title": "934a949cc0ee46ebb2f48c671d858647"
+  },
+  {
+    "embedding": [-0.5712339282035828, 7.138620376586914, -0.9661018252372742],
+    "link": "http://arxiv.org/abs/2502.08864v1",
+    "title": "f6c29b784abf4da387e810d729ceda84"
+  },
+  {
+    "embedding": [-0.35533130168914795, 7.0704240798950195, -0.755118191242218],
+    "link": "http://arxiv.org/abs/2406.00477v1",
+    "title": "5ba31d98a59f478492e4f14fb539b9c3"
+  },
+  {
+    "embedding": [0.2055329531431198, 6.4341559410095215, -0.4443959593772888],
+    "link": "http://arxiv.org/abs/2504.18875v1",
+    "title": "1c6d670f2bf84a7fb025d39d512c2fab"
+  },
+  {
+    "embedding": [-1.4046661853790283, 7.3802409172058105, -1.2040168046951294],
+    "link": "http://arxiv.org/abs/2412.05450v1",
+    "title": "2ae6b122294b4715a1830184836877e1"
+  },
+  {
+    "embedding": [0.05399170517921448, 6.215126037597656, -0.7995673418045044],
+    "link": "http://arxiv.org/abs/2405.06643v2",
+    "title": "78fea5156097419189f7e07988048962"
+  },
+  {
+    "embedding": [0.6034361124038696, 6.890605449676514, 1.2605334520339966],
+    "link": "http://arxiv.org/abs/2506.04133v4",
+    "title": "868a38ba915442b990972f637bd0756b"
+  },
+  {
+    "embedding": [-1.1205974817276, 7.258800029754639, -0.9279624819755554],
+    "link": "http://arxiv.org/abs/2212.13371v1",
+    "title": "c1b3846431b344bd9991f02c554204c8"
+  },
+  {
+    "embedding": [1.3395646810531616, 4.969950199127197, -0.3742913603782654],
+    "link": "http://arxiv.org/abs/2410.15650v1",
+    "title": "49d2f1379e3f45aca5780bae52fda192"
+  },
+  {
+    "embedding": [-1.3307467699050903, 7.248815536499023, -1.249366283416748],
+    "link": "http://arxiv.org/abs/2301.02330v1",
+    "title": "428ef1fa3a564bf79bb849e83265cc25"
+  },
+  {
+    "embedding": [0.6971003413200378, 7.494344234466553, 1.3019546270370483],
+    "link": "http://arxiv.org/abs/2503.04760v1",
+    "title": "49e66729ed764b0ba151e82d241a3ca4"
+  },
+  {
+    "embedding": [0.6265895962715149, 6.535892486572266, 1.1920799016952515],
+    "link": "http://arxiv.org/abs/2510.09567v1",
+    "title": "53f3eedb3aad4dc189ce70e188374b07"
+  },
+  {
+    "embedding": [-0.5376461744308472, 6.210013389587402, 0.8132727146148682],
+    "link": "http://arxiv.org/abs/2412.01992v1",
+    "title": "86ec57c84faf473fbd79f4e4a0d255bf"
+  },
+  {
+    "embedding": [0.26075783371925354, 5.362545013427734, 0.5408159494400024],
+    "link": "http://arxiv.org/abs/2508.12314v1",
+    "title": "b739a75d540042dc878066bcf4cde309"
+  },
+  {
+    "embedding": [0.4021717309951782, 5.234167575836182, 0.5638648867607117],
+    "link": "http://arxiv.org/abs/2505.23846v1",
+    "title": "184e85bf6def4b85bb000daf6520b23d"
+  },
+  {
+    "embedding": [-0.7190291285514832, 6.349079608917236, 0.5975795388221741],
+    "link": "http://arxiv.org/abs/2406.06051v3",
+    "title": "51bd5e9b3feb4a16afc4ace1ff02c9d4"
+  },
+  {
+    "embedding": [0.7501846551895142, 5.3941192626953125, -0.38236916065216064],
+    "link": "http://arxiv.org/abs/2504.12891v1",
+    "title": "c8c95dd1505549aa8ba130ecf56cca33"
+  },
+  {
+    "embedding": [0.0364450067281723, 6.860584259033203, 1.0583418607711792],
+    "link": "http://arxiv.org/abs/2506.12469v2",
+    "title": "d7e023e62b614c03899259878d6fbfaf"
+  },
+  {
+    "embedding": [0.8618104457855225, 6.510878086090088, 1.0905817747116089],
+    "link": "http://arxiv.org/abs/2508.03858v2",
+    "title": "d307ceda5cd8404abd2028c7eed013c7"
+  },
+  {
+    "embedding": [0.8900426626205444, 7.243678569793701, 1.5893738269805908],
+    "link": "http://arxiv.org/abs/2410.13919v2",
+    "title": "21113394f0be489b9920b4d1d1a70549"
+  },
+  {
+    "embedding": [0.36402183771133423, 6.780962944030762, 1.549687147140503],
+    "link": "http://arxiv.org/abs/2507.10571v3",
+    "title": "725b2eacfc184643abcbf0bad57d075f"
+  },
+  {
+    "embedding": [0.06711243838071823, 6.2974090576171875, 1.0979747772216797],
+    "link": "http://arxiv.org/abs/2510.04173v2",
+    "title": "be55f92648ff42408e27891e97283760"
+  },
+  {
+    "embedding": [0.7375462651252747, 7.150850772857666, 1.477321743965149],
+    "link": "http://arxiv.org/abs/2505.06315v2",
+    "title": "472131285bca47d0ba1ed2bbfde0650d"
+  },
+  {
+    "embedding": [0.7321762442588806, 6.2654290199279785, -0.5764510631561279],
+    "link": "http://arxiv.org/abs/2509.02124v1",
+    "title": "4fc36176a2a242fb94d4d84803d3b735"
+  },
+  {
+    "embedding": [-0.011724203824996948, 5.934202194213867, 0.5340096354484558],
+    "link": "http://arxiv.org/abs/2506.00856v2",
+    "title": "2b5bb6b705234edfb0797fb48dd23b3b"
+  },
+  {
+    "embedding": [-0.10693037509918213, 6.037630558013916, 1.0043617486953735],
+    "link": "http://arxiv.org/abs/2507.15003v1",
+    "title": "64c44d66a82c414c87c68b9a02a0c8d1"
+  },
+  {
+    "embedding": [-0.5808871984481812, 6.541956901550293, 0.31536865234375],
+    "link": "http://arxiv.org/abs/2304.09803v1",
+    "title": "b3fe10bf9c604b8f9afb6806c8aabaf7"
+  },
+  {
+    "embedding": [-1.1609811782836914, 6.798389911651611, -1.2756679058074951],
+    "link": "http://arxiv.org/abs/2412.06040v1",
+    "title": "3e6d6cccf4f845ad99347fada885e3bf"
+  },
+  {
+    "embedding": [0.4770248234272003, 6.711330413818359, 0.4246104061603546],
+    "link": "http://arxiv.org/abs/2504.03693v2",
+    "title": "a374bf54d2a64f73a34d77e58e572af7"
+  },
+  {
+    "embedding": [1.3195643424987793, 6.4144487380981445, 0.3484245538711548],
+    "link": "http://arxiv.org/abs/2502.01492v1",
+    "title": "713bae5bdd414676b2e2ae9b85d14524"
+  },
+  {
+    "embedding": [0.6073047518730164, 5.372654914855957, 0.18039077520370483],
+    "link": "http://arxiv.org/abs/2506.04301v1",
+    "title": "af0f9f5a76344543874c9ae77e657979"
+  },
+  {
+    "embedding": [0.7405058145523071, 5.85674524307251, -0.1766563355922699],
+    "link": "http://arxiv.org/abs/2508.03345v1",
+    "title": "2f8f5978c66245b586cd0571ae585399"
+  },
+  {
+    "embedding": [-0.283509224653244, 6.574726581573486, 0.2656649947166443],
+    "link": "http://arxiv.org/abs/2509.14528v1",
+    "title": "0633d9e38b6b4e38a2588c9d654af9b9"
+  },
+  {
+    "embedding": [-0.8427202105522156, 6.579637050628662, -1.1431142091751099],
+    "link": "http://arxiv.org/abs/1701.02388v2",
+    "title": "27269dd30f934a14b1f4775cd71548c7"
+  },
+  {
+    "embedding": [
+      0.05329105630517006, 7.321298599243164, -0.0059473044238984585
+    ],
+    "link": "http://arxiv.org/abs/2507.03904v1",
+    "title": "6f643d954be043eaa92954ba6f030860"
+  },
+  {
+    "embedding": [0.2552519738674164, 7.346785545349121, 0.4350912570953369],
+    "link": "http://arxiv.org/abs/2501.16606v2",
+    "title": "3668abebcd2248388c7f581388284339"
+  },
+  {
+    "embedding": [-0.6378768086433411, 6.221613883972168, 0.8622598648071289],
+    "link": "http://arxiv.org/abs/2312.15160v1",
+    "title": "771ae015ed89443faf7a329132892aa1"
+  },
+  {
+    "embedding": [0.14976432919502258, 6.200583457946777, 1.2013853788375854],
+    "link": "http://arxiv.org/abs/2508.17343v4",
+    "title": "cfbd25ba09444efd8b3588afa163c12c"
+  },
+  {
+    "embedding": [-1.082379698753357, 7.025107383728027, -1.1307451725006104],
+    "link": "http://arxiv.org/abs/2412.05214v1",
+    "title": "d6f77feb42464bfda92ae6939c16accc"
+  },
+  {
+    "embedding": [1.7454901933670044, 4.822955131530762, -0.41099169850349426],
+    "link": "http://arxiv.org/abs/2407.19438v1",
+    "title": "231d76bc23e0424a96e582c9453ca17f"
+  },
+  {
+    "embedding": [1.0240925550460815, 7.360958099365234, 1.4233977794647217],
+    "link": "http://arxiv.org/abs/2510.01751v1",
+    "title": "bc9ff359bb894864b66882f0d014d8aa"
+  },
+  {
+    "embedding": [-0.45096084475517273, 6.702577114105225, 0.24709449708461761],
+    "link": "http://arxiv.org/abs/2402.12814v3",
+    "title": "64590aa420464ccdb63df8f34f1215a6"
+  },
+  {
+    "embedding": [0.34500277042388916, 6.678852558135986, 0.20063906908035278],
+    "link": "http://arxiv.org/abs/2507.01069v1",
+    "title": "b48cf0966a60410c8d44bce06aad8268"
+  },
+  {
+    "embedding": [0.2830497622489929, 6.882430076599121, 0.8027492165565491],
+    "link": "http://arxiv.org/abs/1701.01487v1",
+    "title": "927d3f14817e46c49103e4c9e572c933"
+  },
+  {
+    "embedding": [0.8327310681343079, 5.305229187011719, -0.16348662972450256],
+    "link": "http://arxiv.org/abs/2508.03680v1",
+    "title": "e644b825eae14e289aaed93beeb95379"
+  },
+  {
+    "embedding": [1.4683784246444702, 6.4322333335876465, -0.34103232622146606],
+    "link": "https://patents.google.com/patent/US20250131028A1/en",
+    "title": "caca190fc084425d88481ff1e10e586f"
+  },
+  {
+    "embedding": [3.4107508659362793, 4.481082439422607, -0.42674893140792847],
+    "link": "https://patents.google.com/patent/US20240412720A1/en",
+    "title": "8bf29e058256447e91c077cdadf0d521"
+  },
+  {
+    "embedding": [3.7630972862243652, 5.529002666473389, -0.9054753184318542],
+    "link": "https://patents.google.com/patent/KR102066371B1/en",
+    "title": "7fcdffa58bad41ce884da7871e6ea6b7"
+  },
+  {
+    "embedding": [4.812789440155029, 6.871062278747559, 1.239057183265686],
+    "link": "https://patents.google.com/patent/KR102731639B1/en",
+    "title": "e645bd9550ef41cb9eb16ccc1c4f3026"
+  },
+  {
+    "embedding": [4.460317134857178, 7.312468528747559, -0.5761116147041321],
+    "link": "https://patents.google.com/patent/KR102059753B1/en",
+    "title": "49b646358104410e84e546bd491b183a"
+  },
+  {
+    "embedding": [4.765570640563965, 6.568430423736572, 0.7552325129508972],
+    "link": "https://patents.google.com/patent/KR102103931B1/en",
+    "title": "a6522ec7bb2840028d031720ceab54d9"
+  },
+  {
+    "embedding": [3.7190628051757812, 6.150435447692871, 0.3256835639476776],
+    "link": "https://patents.google.com/patent/US11663890B2/en",
+    "title": "c597b6febfcf4f8295ecd156d974ac3c"
+  },
+  {
+    "embedding": [3.542843818664551, 4.531702995300293, -0.3098665177822113],
+    "link": "https://patents.google.com/patent/US10715662B2/en",
+    "title": "d3f0f8e65f21472fbff838bb7ada0ed5"
+  },
+  {
+    "embedding": [2.562945604324341, 6.686570644378662, 0.663835883140564],
+    "link": "https://patents.google.com/patent/US12135215B2/en",
+    "title": "f0463cea1fd24a769dfbacb96183db2c"
+  },
+  {
+    "embedding": [4.706958293914795, 6.764732360839844, -0.6145720481872559],
+    "link": "https://patents.google.com/patent/US20240127934A1/en",
+    "title": "781e2b130265411a8dd44701a4cba9af"
+  },
+  {
+    "embedding": [3.8037662506103516, 5.857591152191162, 0.037447333335876465],
+    "link": "https://patents.google.com/patent/CN112560491B/en",
+    "title": "528d4a5cb47c45cb886e46562c3ed186"
+  },
+  {
+    "embedding": [3.6043806076049805, 5.335860729217529, -1.1052356958389282],
+    "link": "https://patents.google.com/patent/KR102116457B1/en",
+    "title": "8b1ab7b87f9e46b3bbee547e9cc9e896"
+  },
+  {
+    "embedding": [2.9282729625701904, 4.539179801940918, -0.4712396562099457],
+    "link": "https://patents.google.com/patent/US11825023B2/en",
+    "title": "62ac319ae130417ab2207f48d9cc1780"
+  },
+  {
+    "embedding": [4.3922014236450195, 6.743020057678223, 1.0932437181472778],
+    "link": "https://patents.google.com/patent/US20220274703A1/en",
+    "title": "1edb77be05e243039120881741fd2768"
+  },
+  {
+    "embedding": [2.42026948928833, 6.740657806396484, 0.034462038427591324],
+    "link": "https://patents.google.com/patent/US20210374569A1/en",
+    "title": "70ad102afcbc4fa2ab5d54c9cd59cba8"
+  },
+  {
+    "embedding": [5.188459396362305, 7.652590751647949, -0.9968156218528748],
+    "link": "https://patents.google.com/patent/US20210186454A1/en",
+    "title": "cd14f91a4b52459294f27433e0356913"
+  },
+  {
+    "embedding": [5.378634929656982, 7.7907609939575195, -1.119097352027893],
+    "link": "https://patents.google.com/patent/US11375975B2/en",
+    "title": "b781ca288d7a477eb3164f309a32554d"
+  },
+  {
+    "embedding": [5.339474678039551, 7.760577201843262, -1.094518780708313],
+    "link": "https://patents.google.com/patent/US11534314B2/en",
+    "title": "e3c0646759b441419dad734525c34da5"
+  },
+  {
+    "embedding": [4.9944539070129395, 6.380425930023193, 0.674187421798706],
+    "link": "https://patents.google.com/patent/US11616816B2/en",
+    "title": "3e625760eb814802ac466cf6d9c05bc9"
+  },
+  {
+    "embedding": [3.4300973415374756, 4.686036586761475, -0.5105085968971252],
+    "link": "https://patents.google.com/patent/KR102262035B1/en",
+    "title": "bb2d58849d354cee8f6e54091de9c36e"
+  },
+  {
+    "embedding": [4.617114067077637, 7.1413116455078125, -0.9427225589752197],
+    "link": "https://patents.google.com/patent/US12367959B2/en",
+    "title": "91011a8a39904f73a3ac83ee0ede3124"
+  },
+  {
+    "embedding": [3.2493042945861816, 6.83955192565918, 0.6101952195167542],
+    "link": "https://patents.google.com/patent/KR102159620B1/en",
+    "title": "89a9686466eb479ba88a344e08a5d961"
+  },
+  {
+    "embedding": [3.3807101249694824, 7.086899280548096, 0.32095858454704285],
+    "link": "https://patents.google.com/patent/US11549837B2/en",
+    "title": "e9141e70bd1f4739a9fbd6ba6a072307"
+  },
+  {
+    "embedding": [4.690298557281494, 6.415632247924805, -0.48472586274147034],
+    "link": "https://patents.google.com/patent/US20230013494A1/en",
+    "title": "ae226b2747134f2cb22bf0039ac3138a"
+  },
+  {
+    "embedding": [4.610897541046143, 6.605432033538818, 0.9017802476882935],
+    "link": "https://patents.google.com/patent/US11977530B2/en",
+    "title": "3b22194c5c7b42d1a03d7628d1cfec54"
+  },
+  {
+    "embedding": [3.5160446166992188, 5.1357245445251465, -0.8765669465065002],
+    "link": "https://patents.google.com/patent/US11087283B2/en",
+    "title": "73cca98db962419d8899a50b1304928e"
+  },
+  {
+    "embedding": [3.5069520473480225, 5.75316858291626, -0.02490854263305664],
+    "link": "https://patents.google.com/patent/US11748577B1/en",
+    "title": "5d3ebc84e615444a93cea498794d31d9"
+  },
+  {
+    "embedding": [3.684175729751587, 5.213620185852051, -1.0860371589660645],
+    "link": "https://patents.google.com/patent/US20190114593A1/en",
+    "title": "7ad306cbc6604d5396f8251b943104da"
+  },
+  {
+    "embedding": [1.5213195085525513, 7.311213493347168, 1.518749713897705],
+    "link": "https://patents.google.com/patent/CN106357673B/en",
+    "title": "8ec18353783549c5b2a379443d8a9532"
+  },
+  {
+    "embedding": [4.843278884887695, 6.911670684814453, -0.1275535523891449],
+    "link": "https://patents.google.com/patent/CN110299195B/en",
+    "title": "973cfd591d654a5580aca0f84a337d48"
+  },
+  {
+    "embedding": [4.105943202972412, 7.27214241027832, -0.24534092843532562],
+    "link": "https://patents.google.com/patent/US12076108B1/en",
+    "title": "eba2c2cbf19c4a0c9cca9e93d5fd03e1"
+  },
+  {
+    "embedding": [3.280841588973999, 6.91518497467041, 0.470319926738739],
+    "link": "https://patents.google.com/patent/JP2024161567A/en",
+    "title": "fbb1a02a70e54db09acda3aab030c3bd"
+  },
+  {
+    "embedding": [3.182652473449707, 6.641393661499023, 0.6159584522247314],
+    "link": "https://patents.google.com/patent/KR102291259B1/en",
+    "title": "3323f658b1034efcace973bc535df72f"
+  },
+  {
+    "embedding": [5.031376361846924, 6.875814437866211, 1.4274449348449707],
+    "link": "https://patents.google.com/patent/CN113421165B/en",
+    "title": "b4639bb40c03420f957ddc1c36d85197"
+  },
+  {
+    "embedding": [4.761003494262695, 6.936674118041992, -0.2634868919849396],
+    "link": "https://patents.google.com/patent/WO2020206695A1/en",
+    "title": "ce97bc5a5cb243c8bd6ca088c6e5b749"
+  },
+  {
+    "embedding": [5.0345258712768555, 6.4981608390808105, 0.8692811131477356],
+    "link": "https://patents.google.com/patent/US20210073804A1/en",
+    "title": "26b6380130254a1d96126f68eae35f5d"
+  },
+  {
+    "embedding": [3.713235855102539, 7.17704963684082, -0.06712525337934494],
+    "link": "https://patents.google.com/patent/CN105142408B/en",
+    "title": "3c8e8bbc1fcb41a58f5d59e75d2eda07"
+  },
+  {
+    "embedding": [4.739249229431152, 7.389000415802002, -0.8720114827156067],
+    "link": "https://patents.google.com/patent/US11915815B2/en",
+    "title": "32fff1fe7c0241fd923b6d64a74db6c6"
+  },
+  {
+    "embedding": [4.485503196716309, 7.046597480773926, -0.8048629760742188],
+    "link": "https://patents.google.com/patent/US20230274813A1/en",
+    "title": "1a3c13e8b54b480ba69e1f9057f532e8"
+  },
+  {
+    "embedding": [3.8033342361450195, 6.6365814208984375, 0.09841065853834152],
+    "link": "https://patents.google.com/patent/US10937160B1/en",
+    "title": "f925d5c814ca4408bb353d9f9b0df417"
+  },
+  {
+    "embedding": [4.745803356170654, 6.800010681152344, 0.4509887397289276],
+    "link": "https://patents.google.com/patent/US20220138286A1/en",
+    "title": "4572ad75e8564d9aaa3210e404234238"
+  },
+  {
+    "embedding": [5.008101463317871, 6.842099666595459, 1.0976345539093018],
+    "link": "https://patents.google.com/patent/CN104903872B/en",
+    "title": "eeece00db1bf4e64ae4460f79dca5ec4"
+  },
+  {
+    "embedding": [4.95418643951416, 6.424712181091309, -0.1521805077791214],
+    "link": "https://patents.google.com/patent/US12418876B2/en",
+    "title": "813c294721354ca2b54e6e09916bd1fe"
+  },
+  {
+    "embedding": [4.596158981323242, 7.383143424987793, -0.4549148380756378],
+    "link": "https://patents.google.com/patent/US10410308B2/en",
+    "title": "70c9dc624ce64b20870e237525d0915b"
+  },
+  {
+    "embedding": [2.9775915145874023, 6.9361772537231445, 0.21615540981292725],
+    "link": "https://patents.google.com/patent/CN101031802B/en",
+    "title": "2b0ad7544a174538be56d2175a49ac92"
+  },
+  {
+    "embedding": [1.2445083856582642, 7.375288486480713, 1.4382624626159668],
+    "link": "https://patents.google.com/patent/US12088599B1/en",
+    "title": "752ff17184c849d8b322d600abfe6335"
+  },
+  {
+    "embedding": [1.480560541152954, 6.857543468475342, -0.3064018189907074],
+    "link": "https://patents.google.com/patent/US20240256598A1/en",
+    "title": "e97fefce07354688af633506c8092ac5"
+  },
+  {
+    "embedding": [3.55716872215271, 6.826812267303467, 0.8823986053466797],
+    "link": "https://patents.google.com/patent/CN120198106B/en",
+    "title": "e27dc42f3c3042e6bee0dfbae819a82f"
+  },
+  {
+    "embedding": [4.969036102294922, 6.773704528808594, 1.3971972465515137],
+    "link": "https://patents.google.com/patent/US20250173727A1/en",
+    "title": "0963f86cf1ae4a5b8fe35cfd589bba0b"
+  },
+  {
+    "embedding": [1.5991010665893555, 6.71254301071167, -0.21115697920322418],
+    "link": "https://patents.google.com/patent/US12140915B1/en",
+    "title": "d3a6e3c10f7e446b819a1ec13c69ac8d"
+  }
+]
