@@ -1,38 +1,8 @@
 import os
-from urllib.parse import quote
-from dotenv import load_dotenv
 from serpapi import GoogleSearch
 
 
-load_dotenv()
 SERP_API_KEY = os.getenv("SERP_API_KEY")
-
-
-def _extract_reference_links(detail):
-    """Return a flat list of citation links (patent + non-patent)."""
-    links = []
-
-    print(detail.get('title'))
-    # 1) Patent citations → build Google Patents URLs from publication numbers
-    for c in (detail.get("patent_citations") or {}).get("original", []) or []:
-        if isinstance(c, dict):
-            pub = c.get("publication_number") or c.get("patent_number")
-            if pub:
-                links.append(f"https://patents.google.com/patent/{pub}/en")
-        elif isinstance(c, str):
-            links.append(f"https://patents.google.com/patent/{c}/en")
-
-    print(f"Patent citations found: {len(links)}")
-    # 2) Non-patent citations → use link/url if present, else skip
-    for c in detail.get("non_patent_citations") or []:
-        if isinstance(c, dict):
-            link = c.get("link") or c.get("url")
-            if link:
-                links.append(link)
-
-    print(f"Total citations found: {len(links)}")
-    return links
-
 
 
 def fetch_from_google_patents(keywords, max_results):
