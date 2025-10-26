@@ -3,7 +3,7 @@
 import PlotlyVisualization from "@/components/plotly-visualization";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { AudioLines, SendHorizontal, Loader2 } from "lucide-react";
+import { AudioLines, SendHorizontal, Loader2, Sparkles, Brain, Zap } from "lucide-react";
 import { useState } from "react";
 import { DataPoint } from "@/types/plotly";
 import { useDeepgramVoiceInput } from "@/hooks/useDeepgramVoice";
@@ -16,7 +16,6 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
-import { NextResponse } from "next/server";
 
 export default function ChatPage() {
   const [researchTopics, setResearchTopics] = useState("");
@@ -40,12 +39,18 @@ export default function ChatPage() {
   console.log("Embedding data loaded:", embeddingData);
 
   const handleGetStarted=async()=>{
-    const res = await fetch('http://localhost:8000/api/v1/generator')
-    if(!res){
-      return NextResponse.json({
-        message : "Could not generate idea !"
+    const res = await fetch('http://localhost:9000/api/v1/generator', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        summary: enhancedIdea?.enhanced_idea,
       })
-    }
+    })
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error('Error:', error));
   }
   
   const onSend = async () => {
@@ -63,7 +68,7 @@ export default function ChatPage() {
 
     try {
       // Step 1: Extract data
-      const response = await fetch("http://localhost:8000/api/v1/extractor", {
+      const response = await fetch("http://localhost:9000/api/v1/extractor", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -80,7 +85,7 @@ export default function ChatPage() {
 
       // Step 2: Get 3D points
       const threeDimPoints = await fetch(
-        "http://localhost:8000/api/v1/get3Dpoints",
+        "http://localhost:9000/api/v1/get3Dpoints",
       );
       
       if (!threeDimPoints.ok) {
@@ -99,7 +104,7 @@ export default function ChatPage() {
       setShowChart(true);
 
       // Step 3: Get enhanced ideas
-      const resp = await fetch("http://localhost:8000/api/v1/findIdeas");
+      const resp = await fetch("http://localhost:9000/api/v1/findIdeas");
       
       if (!resp.ok) {
         throw new Error(`Failed to find ideas: ${resp.statusText}`);
@@ -146,90 +151,144 @@ export default function ChatPage() {
   };
 
   return (
-    <div className="relative flex h-screen flex-col overflow-hidden">
-      <div className="flex-1 overflow-y-auto pb-32">
-        <div className="mx-auto w-full max-w-3xl px-4 py-6">
+    <div className="relative flex h-screen flex-col overflow-hidden bg-gradient-fey">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-neon-blue/10 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-neon-purple/10 rounded-full blur-3xl animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neon-pink/5 rounded-full blur-3xl animate-pulse"></div>
+      </div>
+
+      <div className="flex-1 overflow-y-auto pb-32 relative z-10">
+        <div className="mx-auto w-full max-w-4xl px-6 py-8">
           {showChart ? (
-            <div className="mb-6 space-y-6">
+            <div className="mb-8 space-y-8 animate-fade-in-up">
               {/* 3D Visualization */}
-              <div className="rounded-lg border bg-white/80 p-4 backdrop-blur-sm dark:bg-zinc-900/80">
+              <div className="glass rounded-2xl p-6 shadow-neon-glow-lg border border-white/10">
+                <div className="mb-4 flex items-center gap-3">
+                  <Brain className="h-6 w-6 text-neon-blue animate-pulse" />
+                  <h2 className="text-xl font-semibold text-white">Research Landscape</h2>
+                </div>
                 <PlotlyVisualization data={embeddingData} />
               </div>
 
               {/* Enhanced Ideas Section */}
-              <div className="space-y-4">
+              <div className="space-y-6">
                 {isLoading ? (
-                  <Card className="bg-white/60 dark:bg-zinc-900/60">
-                    <CardContent className="flex items-center justify-center py-12">
-                      <div className="flex flex-col items-center gap-3">
-                        <Loader2 className="h-8 w-8 animate-spin text-blue-500" />
-                        <p className="text-sm text-zinc-600 dark:text-zinc-400">
+                  <Card className="glass border-neon-blue/30">
+                    <CardContent className="flex items-center justify-center py-16">
+                      <div className="flex flex-col items-center gap-4">
+                        <div className="relative">
+                          <Loader2 className="h-12 w-12 animate-spin text-neon-blue" />
+                          <Sparkles className="h-6 w-6 text-neon-purple absolute -top-1 -right-1 animate-bounce-subtle" />
+                        </div>
+                        <p className="text-sm text-dark-300 font-medium">
                           Generating research ideas...
                         </p>
+                        <div className="flex gap-1">
+                          <div className="w-2 h-2 bg-neon-blue rounded-full animate-bounce" style={{animationDelay: '0ms'}}></div>
+                          <div className="w-2 h-2 bg-neon-purple rounded-full animate-bounce" style={{animationDelay: '150ms'}}></div>
+                          <div className="w-2 h-2 bg-neon-pink rounded-full animate-bounce" style={{animationDelay: '300ms'}}></div>
+                        </div>
                       </div>
                     </CardContent>
                   </Card>
                 ) : enhancedIdea ? (
-                  <Card className="bg-white/60 dark:bg-zinc-900/60">
+                  <Card className="glass border-neon-blue/30 hover:border-neon-blue/50 transition-all duration-500">
                     <CardHeader>
-                      <CardTitle className="text-lg">
-                        {enhancedIdea.enhanced_idea
-                          .split(" ")
-                          .slice(0, 8)
-                          .join(" ") +
-                          (enhancedIdea.enhanced_idea.split(" ").length > 8
-                            ? "…"
-                            : "")}
-                      </CardTitle>
-                      <CardDescription>AI-enhanced research idea</CardDescription>
+                      <div className="flex items-center gap-3 mb-2">
+                        <Zap className="h-5 w-5 text-neon-blue animate-pulse" />
+                        <CardTitle className="text-xl gradient-text">
+                          {enhancedIdea.enhanced_idea}
+                        </CardTitle>
+                      </div>
+                      <CardDescription className="text-dark-300">
+                        AI-enhanced research idea
+                      </CardDescription>
                     </CardHeader>
                     <CardContent>
-                      <p className="whitespace-pre-wrap text-sm leading-relaxed text-zinc-700 dark:text-zinc-300">
+                      <p className="whitespace-pre-wrap text-sm leading-relaxed text-dark-200">
                         {enhancedIdea.enhanced_idea}
                       </p>
                     </CardContent>
                     <CardFooter>
-                      <div className="flex gap-2">
-                        <Button size="sm" variant="outline" onClick={()=>{handleGetStarted}}>
-                          Get started with the Idea !
+                      <div className="flex gap-3">
+                        <Button 
+                          variant="neon" 
+                          size="lg" 
+                          onClick={()=>{handleGetStarted()}}
+                          className="shimmer"
+                        >
+                          <Sparkles className="h-4 w-4" />
+                          Get Started
                         </Button>
-                        
                       </div>
                     </CardFooter>
                   </Card>
                 ) : (
-                  <div className="rounded-lg border bg-white/60 p-6 text-center text-sm text-zinc-600 backdrop-blur-sm dark:bg-zinc-900/60 dark:text-zinc-400">
-                    <p>No ideas generated yet. Enter topics and hit Send to get started.</p>
+                  <div className="glass rounded-2xl p-8 text-center border border-white/10">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="w-16 h-16 rounded-full bg-dark-800/50 flex items-center justify-center">
+                        <Brain className="h-8 w-8 text-dark-400" />
+                      </div>
+                      <p className="text-sm text-dark-300">
+                        No ideas generated yet. Enter topics and hit Send to get started.
+                      </p>
+                    </div>
                   </div>
                 )}
               </div>
 
               {/* Error Display */}
               {error && (
-                <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-600 dark:border-red-800 dark:bg-red-900/20 dark:text-red-400">
-                  <p className="font-semibold">Error:</p>
-                  <p>{error}</p>
+                <div className="glass rounded-2xl border border-red-500/50 bg-red-900/20 p-6 text-sm text-red-300 backdrop-blur-xl">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+                    <p className="font-semibold">Error:</p>
+                  </div>
+                  <p className="mt-2">{error}</p>
                 </div>
               )}
             </div>
           ) : (
-            <div className="flex h-full items-center justify-center">
-              <div className="text-center">
-                <h1 className="mb-4 text-3xl font-bold text-zinc-800 dark:text-zinc-100">
-                  Research Idea Generator
-                </h1>
-                <p className="mb-8 text-zinc-600 dark:text-zinc-400">
-                  Enter research topics to explore the landscape and discover new ideas
-                </p>
-                <div className="mx-auto max-w-md space-y-2">
-                  <div className="rounded-lg border bg-white/60 p-4 text-left text-sm backdrop-blur-sm dark:bg-zinc-900/60">
-                    <p className="mb-2 font-semibold">Example topics:</p>
-                    <ul className="list-inside list-disc space-y-1 text-zinc-600 dark:text-zinc-400">
-                      <li>Machine learning, computer vision</li>
-                      <li>Climate change, renewable energy</li>
-                      <li>Neuroscience, brain imaging</li>
-                    </ul>
+            <div className="flex h-full items-center justify-center min-h-[60vh]">
+              <div className="text-center max-w-2xl mx-auto animate-fade-in-up">
+                <div className="mb-8">
+                  <div className="inline-flex items-center gap-3 mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-neon-blue to-neon-purple flex items-center justify-center">
+                      <Brain className="h-6 w-6 text-white" />
+                    </div>
+                    <h1 className="text-4xl font-bold gradient-text">
+                      Curiosity AI
+                    </h1>
                   </div>
+                  <p className="text-xl text-dark-300 mb-2 font-medium">
+                    Research Idea Generator
+                  </p>
+                  <p className="text-dark-400 leading-relaxed">
+                    Enter research topics to explore the landscape and discover new ideas with AI-powered insights
+                  </p>
+                </div>
+                
+                <div className="glass rounded-2xl p-6 text-left border border-white/10 max-w-md mx-auto">
+                  <div className="flex items-center gap-2 mb-4">
+                    <Sparkles className="h-4 w-4 text-neon-blue" />
+                    <p className="font-semibold text-white">Example topics:</p>
+                  </div>
+                  <ul className="space-y-2 text-dark-300">
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 bg-neon-blue rounded-full"></div>
+                      Machine learning, computer vision
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 bg-neon-purple rounded-full"></div>
+                      Climate change, renewable energy
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <div className="w-1.5 h-1.5 bg-neon-pink rounded-full"></div>
+                      Neuroscience, brain imaging
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -238,23 +297,24 @@ export default function ChatPage() {
       </div>
 
       {/* Fixed Input Footer */}
-      <footer className="fixed inset-x-0 bottom-0 z-10 border-t border-white/20 bg-white/80 backdrop-blur-md dark:border-zinc-700/80 dark:bg-zinc-900/80">
-        <div className="mx-auto w-full max-w-3xl px-4 py-4">
-          <div className="flex items-end gap-2 rounded-xl border border-zinc-200 bg-white p-2 dark:border-zinc-700 dark:bg-zinc-900">
+      <footer className="fixed inset-x-0 bottom-0 z-20 border-t border-white/10 glass backdrop-blur-xl">
+        <div className="mx-auto w-full max-w-4xl px-6 py-6">
+          <div className="flex items-end gap-3 rounded-2xl border border-white/20 glass p-3 backdrop-blur-xl">
             <Input
               value={researchTopics}
               placeholder="Enter research topics separated by commas (e.g., machine learning, climate change, neuroscience)"
-              className="flex-1 resize-none border-none bg-transparent text-sm focus-visible:ring-0 dark:text-zinc-50"
+              className="flex-1 resize-none border-none bg-transparent text-sm focus-visible:ring-0 text-white placeholder:text-dark-400"
               onChange={(e) => setResearchTopics(e.target.value)}
               onKeyDown={handleKeyDown}
               disabled={isLoading}
             />
             <Button
               size="icon"
-              className={`h-10 w-10 shrink-0 text-white ${
+              variant={isRecordingVoice ? "destructive" : "glass"}
+              className={`h-12 w-12 shrink-0 ${
                 isRecordingVoice
-                  ? "bg-red-500 hover:bg-red-600"
-                  : "bg-blue-500 hover:bg-blue-600"
+                  ? "animate-pulse"
+                  : "hover:shadow-neon-glow"
               }`}
               onClick={handleVoiceToggle}
               disabled={isLoading}
@@ -262,35 +322,36 @@ export default function ChatPage() {
                 isRecordingVoice ? "Stop voice input" : "Start voice input"
               }
             >
-              <AudioLines className="h-4 w-4" />
+              <AudioLines className="h-5 w-5" />
             </Button>
             <Button
               size="icon"
-              className="h-10 w-10 shrink-0 bg-emerald-500 text-white hover:bg-emerald-600"
+              variant="neon"
+              className="h-12 w-12 shrink-0 shimmer"
               onClick={onSend}
               disabled={isLoading}
             >
               {isLoading ? (
-                <Loader2 className="h-4 w-4 animate-spin" />
+                <Loader2 className="h-5 w-5 animate-spin" />
               ) : (
-                <SendHorizontal className="h-4 w-4" />
+                <SendHorizontal className="h-5 w-5" />
               )}
             </Button>
           </div>
           
           {/* Voice keywords display */}
           {(researchTopicsVoice.length > 0 || voiceError) && (
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-xs">
+            <div className="mt-3 flex flex-wrap items-center gap-2 text-xs animate-fade-in-up">
               {researchTopicsVoice.map((k) => (
                 <span
                   key={k}
-                  className="rounded bg-emerald-500/20 px-2 py-1 text-emerald-700 dark:text-emerald-300"
+                  className="rounded-full bg-neon-blue/20 px-3 py-1.5 text-neon-blue border border-neon-blue/30 backdrop-blur-sm"
                 >
                   {k}
                 </span>
               ))}
               {voiceError && (
-                <span className="rounded bg-red-500/20 px-2 py-1 text-red-600 dark:text-red-400">
+                <span className="rounded-full bg-red-500/20 px-3 py-1.5 text-red-400 border border-red-500/30 backdrop-blur-sm">
                   {voiceError}
                 </span>
               )}

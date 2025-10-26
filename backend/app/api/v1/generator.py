@@ -1,7 +1,10 @@
 from flask import request, jsonify
 from app.api.v1 import bp
 from app.utils.utils_generator import classify_coding_related, generate_research_titles, generate_multi_code_and_docs
-from app.agents.code_agent import generator
+from app.agents.code_agent import CodebaseGenerator
+
+
+codebase_generator = CodebaseGenerator()
 
 
 @bp.post("/generator")
@@ -38,7 +41,7 @@ def generator():
 
     # 3) Branch on coding-related
     if coding_related:
-        ideas = generator.create_project(summary=summary)
+        ideas = codebase_generator.create_project(summary=summary)
         result.update({
             "ideas": ideas,               # list of idea objects
             "count": len(ideas)

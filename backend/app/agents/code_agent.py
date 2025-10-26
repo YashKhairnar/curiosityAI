@@ -43,8 +43,8 @@ code_generator = Agent(
 fund_agent_if_low(code_generator.wallet.address())
 
 class CodebaseGenerator:
-    def __init__(self, api_key: str):
-        genai.configure(api_key=api_key)
+    def __init__(self):
+        genai.configure(api_key=os.getenv("GEMINI_API_KEY", ""))
         self.model = genai.GenerativeModel(os.getenv("GEMINI_MODEL"))
         
         # Configure generation parameters
@@ -141,6 +141,7 @@ Use proper Markdown formatting."""
         project_name = structure['project_name']
         
         project_context = summary
+
         
         # Generate code samples for each file
         code_samples = []
@@ -207,7 +208,7 @@ Use proper Markdown formatting."""
         }
 
 # Initialize generator
-generator = CodebaseGenerator(api_key=os.getenv("GEMINI_API_KEY", ""))
+generator = CodebaseGenerator()
 
 # Create a protocol for HTTP handling
 http_protocol = Protocol(name="http_protocol")

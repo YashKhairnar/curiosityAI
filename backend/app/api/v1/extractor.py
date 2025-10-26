@@ -43,7 +43,7 @@ def extractor():
     payload = request.get_json(silent=True) or {}
     keywords = payload.get('keywords', [])
 
-    max_results = payload.get('max_results', 300) 
+    max_results = payload.get('max_results', 100) 
 
     records = process_keywords(keywords, max_results=max_results)
     l = len(records)
