@@ -1,0 +1,13 @@
+{
+      "coding_related": true,
+      "classification": "abc",
+      "research_titles": ["RAG"],
+      "ideas": [{
+        "title": "RAG1",
+        "approach": "...",
+        "stack": "...",
+        "documentation": "## README ...ABC",
+        "code_samples": [{"filename":"app.py","language":"python","content":"print(\"Hello World!"}]
+      }],
+      "count": 3
+    }
