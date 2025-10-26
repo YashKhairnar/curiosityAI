@@ -53,7 +53,7 @@ Place the provided .env file inside the backend/ folder.
 
 ```bash
 python startup.py
-✅ Server runs at http://localhost:${PORT}   # default: http://localhost:8000
+✅ Server runs at http://127.0.0.1:8000
 ```
 
 
@@ -65,7 +65,7 @@ python startup.py
 ```bash
 Method: GET
 URL: /health
-curl: curl -s http://localhost:8000/api/v1/health
+curl: curl -s http://127.0.0.1:8000/api/v1/health
 ```
 
 
@@ -77,7 +77,7 @@ curl: curl -s http://localhost:8000/api/v1/health
 ```bash
 Method: POST
 URL: /generate
-curl: curl -s -X POST http://localhost:8000/api/v1/generate \
+curl: curl -s -X POST http://127.0.0.1:8000/api/v1/generator \
   -H "Content-Type: application/json" \
   -d '{
     "summary": "A REST API for tracking workouts with JWT auth and PostgreSQL",

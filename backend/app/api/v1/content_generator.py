@@ -1,11 +1,11 @@
 from flask import request, jsonify
 from app.api.v1 import bp
-from app.utils.utils_content_generator import classify_coding_related, generate_research_titles, generate_multi_code_and_docs
+from app.utils.utils_generator import classify_coding_related, generate_research_titles, generate_multi_code_and_docs
 from app.agents.code_agent import generator
 
 
-@bp.post("/content_generator")
-def content_generator():
+@bp.post("/generator")
+def generator():
     """
     Body JSON:
     {
