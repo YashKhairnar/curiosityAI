@@ -74,8 +74,8 @@ def main():
     load_dotenv(override=True)
     print("✅ Environment variables loaded successfully.")
 
-    # Get the port number from environment variables or default to 8000
-    port = os.getenv("FLASK_PORT", "8000")
+    # Get the port number from environment variables or default to 9000
+    port = os.getenv("FLASK_PORT", "9000")
     
     # Discover and start all agent files in app/agents/
     agents_dir = Path("app/agents")
@@ -98,8 +98,8 @@ def main():
             try:
                 process = subprocess.Popen(
                     ["python3", str(agent_file)],
-                    stdout=None,  # inherit stdout
-                    stderr=None,  # inherit stderr
+                    stdout=None,  # inherit stdout for INFO logs
+                    stderr=subprocess.DEVNULL,  # suppress asyncio errors
                     env={**os.environ},  # Pass fresh environment
                     **kwargs,
                 )
@@ -113,18 +113,25 @@ def main():
                 print(f"  ❌ Failed to start {agent_name}: {e}")
         
         time.sleep(2)  # Give agents time to start
-        print(f"✅ All agents started")
+        print(f"✅ All agents started\n")
     
 
     # Start the Flask server (this will block)
     print(f"🚀 Starting Flask server on port {port}...")
+    print(f"   📍 Main API: http://localhost:{port}")
+    print(f"   📍 Code Agent: http://localhost:{os.getenv('CODE_AGENT_PORT', '8001')}")
+    print(f"   📍 Feasibility: http://localhost:{os.getenv('FEASIBILITY_AGENT_PORT', '5010')}")
+    print(f"   📍 GitHub Agent: http://localhost:8090")
+    print(f"   📍 Tavily Agent: http://localhost:{os.getenv('TAVILY_REFERENCE_AGENT_PORT', '8007')}")
+    print(f"\n   Press CTRL+C to stop all services\n")
+    
     # Ensure cleanup on process exit and on signals
     atexit.register(_stop_all_agents)
     signal.signal(signal.SIGINT, _handle_signal)
     signal.signal(signal.SIGTERM, _handle_signal)
 
     try:
-        subprocess.run(["python3", "wsgi.py"])
+        subprocess.run(["python3", "wsgi.py"], stderr=subprocess.DEVNULL)
     finally:
         # Cleanup all agent processes when Flask stops
         _stop_all_agents()

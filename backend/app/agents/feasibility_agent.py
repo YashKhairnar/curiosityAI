@@ -556,7 +556,6 @@ def feasibility_http():
     return jsonify(resp), 200
 
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "5010"))  # default 5010
+    port = int(os.getenv("FEASIBILITY_AGENT_PORT", os.getenv("PORT", "5010")))
     debug = os.getenv("FLASK_DEBUG", "0") == "1"
-    print("Starting Flask on port", port)
     app.run(host="0.0.0.0", port=port, debug=debug)
