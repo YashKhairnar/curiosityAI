@@ -1,6 +1,7 @@
 from flask import request, jsonify
 from app.api.v1 import bp
 from app.utils.utils_content_generator import classify_coding_related, generate_research_titles, generate_multi_code_and_docs
+from app.agents.code_agent import generator
 
 
 @bp.post("/content_generator")
@@ -9,15 +10,11 @@ def content_generator():
     Body JSON:
     {
       "summary": "string (required)",
-      "preferred_stack": "string (optional)",
-      "num_ideas": 3,                # optional, default 3, max 5
       "num_research_titles": 5       # optional, default 5, max 10
     }
     """
     data = request.get_json(silent=True) or {}
     summary = (data.get("summary") or "").strip()
-    preferred_stack = (data.get("preferred_stack") or "").strip() or None
-    num_ideas = int(data.get("num_ideas") or 3)
     num_titles = int(data.get("num_research_titles") or 5)
 
     if not summary:
@@ -41,7 +38,7 @@ def content_generator():
 
     # 3) Branch on coding-related
     if coding_related:
-        ideas = generate_multi_code_and_docs(summary, preferred_stack, num_ideas)
+        ideas = generator.create_project(summary=summary)
         result.update({
             "ideas": ideas,               # list of idea objects
             "count": len(ideas)
