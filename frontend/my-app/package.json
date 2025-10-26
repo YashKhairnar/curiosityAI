@@ -9,6 +9,8 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@deepgram/sdk": "^4.11.2",
+    "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "lucide": "^0.548.0",
