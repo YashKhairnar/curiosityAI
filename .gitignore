@@ -1,2 +1,4 @@
 .venv
 frontend/my-app/node_modules
+backend/.env
+.env
