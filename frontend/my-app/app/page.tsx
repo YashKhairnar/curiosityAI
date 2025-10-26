@@ -16,6 +16,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import { NextResponse } from "next/server";
 
 export default function ChatPage() {
   const [researchTopics, setResearchTopics] = useState("");
@@ -38,6 +39,15 @@ export default function ChatPage() {
 
   console.log("Embedding data loaded:", embeddingData);
 
+  const handleGetStarted=async()=>{
+    const res = await fetch('http://localhost:8000/api/v1/generator')
+    if(!res){
+      return NextResponse.json({
+        message : "Could not generate idea !"
+      })
+    }
+  }
+  
   const onSend = async () => {
     const typed = researchTopics.trim() ? parseTopics(researchTopics) : [];
     const allTopics = mergeUniqueTopics(typed, researchTopicsVoice);
@@ -180,27 +190,10 @@ export default function ChatPage() {
                     </CardContent>
                     <CardFooter>
                       <div className="flex gap-2">
-                        <Button size="sm" variant="outline">
-                          CodeGen
+                        <Button size="sm" variant="outline" onClick={()=>{handleGetStarted}}>
+                          Get started with the Idea !
                         </Button>
-                        <Button
-                          size="sm"
-                          variant="outline"
-                          onClick={() =>
-                            navigator.clipboard?.writeText(
-                              enhancedIdea.enhanced_idea,
-                            )
-                          }
-                        >
-                          Copy
-                        </Button>
-                        <Button 
-                          size="sm" 
-                          variant="outline"
-                          onClick={() => alert("Saved (stub)")}
-                        >
-                          Save
-                        </Button>
+                        
                       </div>
                     </CardFooter>
                   </Card>
