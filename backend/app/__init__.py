@@ -4,6 +4,7 @@ from .config import get_config
 from .extensions import init_logging, init_cors
 from .api.v1 import bp as api_v1_bp
 
+
 def create_app():
     app = Flask(__name__)
     app.config.from_object(get_config())

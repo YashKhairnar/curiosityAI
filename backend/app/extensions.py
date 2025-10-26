@@ -17,3 +17,5 @@ def init_logging(app):
 
 def init_cors(app):
     CORS(app, resources=app.config.get("CORS_RESOURCES"))
+
+
