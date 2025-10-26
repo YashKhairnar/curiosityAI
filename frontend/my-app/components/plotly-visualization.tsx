@@ -138,7 +138,7 @@ export default function PlotlyVisualization({
   }
 
   return (
-    <div className="w-full h-full">
+    <div className="h-full w-full">
       {plotData.length > 0 && (
         <Plot
           data={plotData}
@@ -178,7 +178,7 @@ export default function PlotlyVisualization({
             legend: {
               x: 0.02,
               y: 0.98,
-              bgcolor: "rgba(0,0,0,0.5)",
+              bgcolor: "rgba(0,0,0,0)",
               bordercolor: "#ffffff",
               borderwidth: 1,
               font: { color: "#ffffff" },
