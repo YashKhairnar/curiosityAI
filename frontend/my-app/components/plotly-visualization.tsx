@@ -143,10 +143,6 @@ export default function PlotlyVisualization({
         <Plot
           data={plotData}
           layout={{
-            title: {
-              text: "Research Papers Embeddings - 3D Surface Visualization",
-              font: { color: "#ffffff", size: 24 },
-            },
             scene: {
               xaxis: {
                 title: "X Dimension",
