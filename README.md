@@ -23,14 +23,6 @@ CuriosityAI is an innovative AI-powered agentic system designed to democratize i
 - **APIs**: ArXiv, PubChem, GitHub, Semantic Scholar.
 - **UI/Deployment**: Next.js, 3.js for interactive web app
 
-
-## How It Works
-
-1. **Embedding & Gap Detection**: Fetch patents, embed with Sentence Transformers, fit GMM to find low-density vectors.
-2. **Sampling & Inversion**: Optimize/perturb for gap vectors, invert to text with Vec2Text.
-3. **Agent Workflows**: LangChain agents handle feasibility (ReAct reasoning), proposal gen (RAG), code push (GitHub API), and refs (web/X searches).
-4. **Extensions**: Ethical checks, multi-modal search (images/videos), blockchain provenance (Sui integration).
-
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
