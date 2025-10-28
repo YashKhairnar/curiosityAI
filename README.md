@@ -29,6 +29,5 @@ MIT License. See [LICENSE](LICENSE) for details.
 
 ## Acknowledgments
 
-- Built at CalHacks 2025 with inspiration from agentic AI trends and patent mapping research.
-- Thanks to sponsors: Anthropic, Fetch.ai, Groq, Chroma, YC, and more.
+- Built at CalHacks 12.0, 2025
 - Team: CuriosityAI
